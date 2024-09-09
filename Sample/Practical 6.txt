@@ -1,0 +1,77 @@
+#include <stdio.h>
+#define  SQUARE(x) ((x)*(x))
+int main()
+{
+    int n,ans;
+    printf("Enter Number:: ");
+    scanf("%d",&n);
+    ans=SQUARE(n);
+    printf("%d",ans);
+
+    return 0;
+}
+
+
+Program - 2
+#include <stdio.h>
+#define  MAX(x,y) (((x)>(y))?(x):(y))
+int main()
+{
+    int n1,n2,ans;
+    printf("Enter Number-1:: ");
+    scanf("%d",&n1);
+    printf("Enter Number-2:: ");
+    scanf("%d",&n2);
+    ans = MAX(n1,n2);
+    printf("Maximum = %d",ans);
+
+    return 0;
+}
+
+Program - 3
+#include <stdio.h>
+#define  ROUND(x) ((int)(x+0.5))
+int main()
+{
+    float n1,ans;
+    printf("Enter Number-1:: ");
+    scanf("%f",&n1);
+    ans = ROUND(n1);
+    printf("Ans = %f",ans);
+
+    return 0;
+}
+
+Program-4
+#include <stdio.h>
+#include  <ctype.h>
+int main()
+{
+    char ch;
+    printf("Enter Character:: ");
+    scanf("%c",&ch);
+    if(isalpha(ch)){
+        if(isupper(ch)) printf("%c is alphabet & it's in uppercase",ch);
+        else printf("%c is alphabet & it's in lowercase",ch);
+    }
+    else if(isdigit(ch)) printf("%c is digit",ch);
+    else if(ispunct(ch)) printf("%c is symbol",ch);
+    else printf("Inavali input");
+    return 0;
+}
+
+Program - 5
+#include<stdio.h>
+int main(){
+
+	printf("Current Date = %s\n",__DATE__);
+	printf("Current Time = %s",__TIME__);
+}
+
+Program - 6
+#include<stdio.h>
+int main(){
+
+	printf("Current file name  = %s\n",__FILE__);
+	printf("Line of Code  = %d",__LINE__);
+}
